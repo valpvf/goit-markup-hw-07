@@ -1,0 +1,113 @@
+@media screen and (min-width: 1200px) {
+  .container,
+  .team .container-small,
+  .customer .container-small {
+    max-width: 1158px;
+  }
+
+  .header-logo {
+    margin-right: 76px;
+  }
+  
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-email,
+  .address-tel {
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .hero {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: var(--gradient),
+      url(../images/hero/hero-bg-desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: var(--gradient),
+        url(../images/hero/hero-bg-desk-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    margin: 0 auto 48px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .principles-list {
+    flex-wrap: nowrap;
+    --cards: 4;
+  }
+
+  .priciples-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background: var(--light-clr);
+  }
+
+  .principles-caption {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .doing {
+    display: block;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+    --cards: 4;
+    --gap: 24px;
+  }
+
+  .customer.section {
+    padding-top: 130px;
+  }
+
+  .customer-list {
+    flex-wrap: nowrap;
+  }
+
+  .customer-list {
+    --cards: 6;
+    --gap: 24px;
+    column-gap: 24px;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+
+  .footer-box {
+    flex-wrap: nowrap;
+    gap: 120px;
+  }
+
+  .modal {
+    top: 80px;
+    height: 586px;
+  }
+}

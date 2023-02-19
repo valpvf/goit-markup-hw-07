@@ -1,0 +1,59 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 426px;
+  }
+
+  .mob-address-tel {
+    font-size: 36px;
+  }
+
+  .team .container-small {
+    max-width: 290px;
+  }
+
+  .grid-item {
+    flex-basis: calc(
+      (100% - var(--gap) * (var(--cards) - 1)) / var(--cards)
+    );
+  }
+
+  .hero-title {
+    max-width: 320px;
+    margin: 0 auto 72px;
+    font-size: 36px;
+  }
+
+  .principles-list {
+    flex-basis: 100%;
+    --cards: 1;
+  }
+
+  .customer-list {
+    --cards: 2;
+    --gap: 16px;
+  }
+
+  .footer-text {
+    width: 268px;
+  }
+
+  .modal {
+    width: 392px;
+    height: 586px;
+  }
+
+  .modal-title {
+    font-size: 16px;
+  }
+
+  .modal-text {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-size: 12px;
+  }
+
+  .mob-soc-list {
+    justify-content: start;
+    --gap: 56px;
+  }
+}

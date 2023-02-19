@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Portfolio</title>
+    <title>Web Studio</title>
     <link type="image/png" href="./images/favicon.png" rel="icon" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link
@@ -27,6 +27,9 @@
       referrerpolicy="no-referrer"
     />
     <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/mobile.css" rel="stylesheet" />
+    <link href="./css/tablet.css" rel="stylesheet" />
+    <link href="./css/desktop.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -80,8 +83,130 @@
             </li>
           </ul>
         </address>
+        <button class="burger-open" data-menu-open type="button">
+          <svg class="burger-icon">
+            <use href="./images/icons.svg#icon-humburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button
+          class="mob-menu-close modal-close"
+          data-menu-close
+          type="button"
+        >
+          <svg class="menu-close-icon modal-close-svg">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-nav">
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link  active-mob" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-wrap">
+          <address class="mob-menu-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-email link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-tel link"
+                  href="tel:+110001111111"
+                >
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-list team-soc-list list grid-list">
+            <li class="mob-soc-item team-soc-item">
+              <a
+                class="mob-soc-link team-soc-link link grid-list"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="mob-soc-icon team-soc-icon"
+                  width="16px"
+                  height="16px"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item team-soc-item">
+              <a
+                class="mob-soc-link team-soc-link link grid-list"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="mob-soc-icon team-soc-icon"
+                  width="16px"
+                  height="16px"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item team-soc-item">
+              <a
+                class="mob-soc-link team-soc-link link grid-list"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="mob-soc-icon team-soc-icon"
+                  width="16px"
+                  height="16px"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item team-soc-item">
+              <a
+                class="mob-soc-link team-soc-link link grid-list"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="mob-soc-icon team-soc-icon"
+                  width="16px"
+                  height="16px"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <main>
       <section class="portfolio section">
         <div class="container">
@@ -325,6 +450,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container footer-wrapper">
         <div class="footer-box">
@@ -420,11 +546,12 @@
       </div>
     </footer>
 
-    <a href="#" class="to-top link">
+    <!-- <a href="#" class="to-top link">
       <svg class="go-top">
         <use href="./images/icons.svg#icon-top"></use>
       </svg>
       <p>go top</p>
-    </a>
+    </a> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -27,6 +27,9 @@
       referrerpolicy="no-referrer"
     />
     <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/mobile.css" rel="stylesheet" />
+    <link href="./css/tablet.css" rel="stylesheet" />
+    <link href="./css/desktop.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -80,8 +83,132 @@
             </li>
           </ul>
         </address>
+        <button class="burger-open" data-menu-open type="button">
+          <svg class="burger-icon">
+            <use href="./images/icons.svg#icon-humburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button
+          class="mob-menu-close modal-close"
+          data-menu-close
+          type="button"
+        >
+          <svg class="menu-close-icon modal-close-svg">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-nav">
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a
+                class="mob-menu-link link active-mob"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-wrap">
+          <address class="mob-menu-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-email link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-tel link"
+                  href="tel:+110001111111"
+                >
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-list team-soc-list list grid-list">
+            <li class="mob-soc-item team-soc-item">
+              <a
+                class="mob-soc-link team-soc-link link grid-list"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="mob-soc-icon team-soc-icon"
+                  width="16px"
+                  height="16px"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item team-soc-item">
+              <a
+                class="mob-soc-link team-soc-link link grid-list"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="mob-soc-icon team-soc-icon"
+                  width="16px"
+                  height="16px"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item team-soc-item">
+              <a
+                class="mob-soc-link team-soc-link link grid-list"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="mob-soc-icon team-soc-icon"
+                  width="16px"
+                  height="16px"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item team-soc-item">
+              <a
+                class="mob-soc-link team-soc-link link grid-list"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="mob-soc-icon team-soc-icon"
+                  width="16px"
+                  height="16px"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container hero-container">
@@ -164,24 +291,27 @@
           <ul class="doing-list section-list list grid-list">
             <li class="doing-item section-item grid-item">
               <img
-                src="./images/do1.jpg"
+                src="./images/doing/do1.jpg"
                 alt="computer"
+                srcset="./images/doing/do1-2x.jpg 2x"
                 width="360"
                 height="300"
               />
             </li>
             <li class="doing-item section-item grid-item">
               <img
-                src="./images/do2.jpg"
+                src="./images/doing/do2.jpg"
                 alt="tablet"
+                srcset="./images/doing/do2-2x.jpg 2x"
                 width="360"
                 height="300"
               />
             </li>
             <li class="doing-item section-item grid-item">
               <img
-                src="./images/do3.jpg"
+                src="./images/doing/do3.jpg"
                 alt="phone"
+                srcset="./images/doing/do3-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -190,13 +320,14 @@
         </div>
       </section>
       <section class="team section accent-bg">
-        <div class="container">
+        <div class="container container-small">
           <h2 class="team-title section-title">Our Team</h2>
           <ul class="team-list section-list list grid-list">
             <li class="team-item section-item grid-item">
               <img
-                src="./images/team1.jpg"
+                src="./images/team/team1.jpg"
                 alt="Mark Guerrero"
+                srcset="./images/team/team1-2x.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -285,8 +416,9 @@
             </li>
             <li class="team-item section-item grid-item">
               <img
-                src="./images/team2.jpg"
+                src="./images/team/team2.jpg"
                 alt="Tom Ford"
+                srcset="./images/team/team2-2x.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -375,8 +507,9 @@
             </li>
             <li class="team-item section-item grid-item">
               <img
-                src="./images/team3.jpg"
+                src="./images/team/team3.jpg"
                 alt="Camila Garcia"
+                srcset="./images/team/team3-2x.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -463,8 +596,9 @@
             </li>
             <li class="team-item section-item grid-item">
               <img
-                src="./images/team4.jpg"
+                src="./images/team/team4.jpg"
                 alt="Daniel Wilson"
+                srcset="./images/team/team4-2x.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -555,7 +689,7 @@
         </div>
       </section>
       <section class="customer section">
-        <div class="container">
+        <div class="container container-small">
           <h2 class="customer-title section-title">Customers</h2>
           <ul class="customer-list section-list list grid-list">
             <li class="customer-item section-item grid-item">
@@ -660,6 +794,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container footer-wrapper">
         <div class="footer-box">
@@ -846,13 +981,14 @@
       </div>
     </div>
 
-    <a href="#" class="to-top link">
+    <!-- <a href="#" class="to-top link">
       <svg class="go-top">
         <use href="./images/icons.svg#icon-top"></use>
       </svg>
       <p>go top</p>
-    </a>
+    </a> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
