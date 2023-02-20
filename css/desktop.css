@@ -8,7 +8,7 @@
   .header-logo {
     margin-right: 76px;
   }
-  
+
   .address-list {
     flex-direction: row;
     gap: 40px;
@@ -104,6 +104,22 @@
   .footer-box {
     flex-wrap: nowrap;
     gap: 120px;
+  }
+
+  .portfolio {
+    padding-top: 172px;
+  }
+
+  .filter-list {
+    margin-bottom: 72px;
+  }
+
+  .gallery-list {
+    row-gap: 48px;
+  }
+
+  .gallery-img {
+    width: 360px;
   }
 
   .modal {

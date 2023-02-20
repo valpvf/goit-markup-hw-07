@@ -107,7 +107,9 @@
               >
             </li>
             <li class="mob-menu-item">
-              <a class="mob-menu-link link  active-mob" href="./portfolio.html"
+              <a
+                class="mob-menu-link link active-mob"
+                href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -211,7 +213,7 @@
       <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="filter-list list grid-list">
+          <ul class="filter-list list">
             <li>
               <button class="filter-btn btn" type="button">
                 All
@@ -239,15 +241,36 @@
             </li>
           </ul>
           <ul class="gallery-list list grid-list">
-            <li class="gallery-item grid-item">
+            <li class="gallery-item">
               <a class="link" href="#">
                 <div class="gallery-top-wrap">
-                  <img
-                    src="./images/gallery1.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./images/gallery/gallery1-1200.jpg    1x,
+                        ./images/gallery/gallery1-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery1-768.jpg    1x,
+                        ./images/gallery/gallery1-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery1.jpg    1x,
+                        ./images/gallery/gallery1-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/gallery/gallery1.jpg"
+                      alt="Banking App Interface Concept"
+                    />
+                  </picture>
                   <p class="gallery-top-text">
                     14 Stylish and User-Friendly App Design Concepts ·
                     Task Manager App · Calorie Tracker App · Exotic
@@ -262,15 +285,36 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item grid-item">
+            <li class="gallery-item">
               <a class="link" href="#">
                 <div class="gallery-top-wrap">
-                  <img
-                    src="./images/gallery2.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./images/gallery/gallery2-1200.jpg    1x,
+                        ./images/gallery/gallery2-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery2-768.jpg    1x,
+                        ./images/gallery/gallery2-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery2.jpg    1x,
+                        ./images/gallery/gallery2-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/gallery/gallery2.jpg"
+                      alt="Cashless Payment"
+                    />
+                  </picture>
                   <p class="gallery-top-text">
                     14 Stylish and User-Friendly App Design Concepts ·
                     Task Manager App · Calorie Tracker App · Exotic
@@ -285,15 +329,36 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item grid-item">
+            <li class="gallery-item">
               <a class="link" href="#">
                 <div class="gallery-top-wrap">
-                  <img
-                    src="./images/gallery3.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./images/gallery/gallery3-1200.jpg    1x,
+                        ./images/gallery/gallery3-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery3-768.jpg    1x,
+                        ./images/gallery/gallery3-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery3.jpg    1x,
+                        ./images/gallery/gallery3-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/gallery/gallery3.jpg"
+                      alt="Meditaion App"
+                    />
+                  </picture>
                   <p class="gallery-top-text">
                     14 Stylish and User-Friendly App Design Concepts ·
                     Task Manager App · Calorie Tracker App · Exotic
@@ -308,15 +373,36 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item grid-item">
+            <li class="gallery-item">
               <a class="link" href="#">
                 <div class="gallery-top-wrap">
-                  <img
-                    src="./images/gallery4.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./images/gallery/gallery4-1200.jpg    1x,
+                        ./images/gallery/gallery4-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery4-768.jpg    1x,
+                        ./images/gallery/gallery4-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery4.jpg    1x,
+                        ./images/gallery/gallery4-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/gallery/gallery4.jpg"
+                      alt="Taxi Service"
+                    />
+                  </picture>
                   <p class="gallery-top-text">
                     14 Stylish and User-Friendly App Design Concepts ·
                     Task Manager App · Calorie Tracker App · Exotic
@@ -331,15 +417,36 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item grid-item">
+            <li class="gallery-item">
               <a class="link" href="#">
                 <div class="gallery-top-wrap">
-                  <img
-                    src="./images/gallery5.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./images/gallery/gallery5-1200.jpg    1x,
+                        ./images/gallery/gallery5-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery5-768.jpg    1x,
+                        ./images/gallery/gallery5-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery5.jpg    1x,
+                        ./images/gallery/gallery5-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/gallery/gallery5.jpg"
+                      alt="Screen Illustrations"
+                    />
+                  </picture>
                   <p class="gallery-top-text">
                     14 Stylish and User-Friendly App Design Concepts ·
                     Task Manager App · Calorie Tracker App · Exotic
@@ -354,15 +461,36 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item grid-item">
+            <li class="gallery-item">
               <a class="link" href="#">
                 <div class="gallery-top-wrap">
-                  <img
-                    src="./images/gallery6.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./images/gallery/gallery6-1200.jpg    1x,
+                        ./images/gallery/gallery6-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery6-768.jpg    1x,
+                        ./images/gallery/gallery6-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery6.jpg    1x,
+                        ./images/gallery/gallery6-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/gallery/gallery6.jpg"
+                      alt="Online Courses"
+                    />
+                  </picture>
                   <p class="gallery-top-text">
                     14 Stylish and User-Friendly App Design Concepts ·
                     Task Manager App · Calorie Tracker App · Exotic
@@ -377,15 +505,36 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item grid-item">
+            <li class="gallery-item">
               <a class="link" href="#">
                 <div class="gallery-top-wrap">
-                  <img
-                    src="./images/gallery7.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./images/gallery/gallery7-1200.jpg    1x,
+                        ./images/gallery/gallery7-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery7-768.jpg    1x,
+                        ./images/gallery/gallery7-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery7.jpg    1x,
+                        ./images/gallery/gallery7-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/gallery/gallery7.jpg"
+                      alt="Instagram Stories Concept"
+                    />
+                  </picture>
                   <p class="gallery-top-text">
                     14 Stylish and User-Friendly App Design Concepts ·
                     Task Manager App · Calorie Tracker App · Exotic
@@ -400,15 +549,36 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item grid-item">
+            <li class="gallery-item">
               <a class="link" href="#">
                 <div class="gallery-top-wrap">
-                  <img
-                    src="./images/gallery8.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./images/gallery/gallery8-1200.jpg    1x,
+                        ./images/gallery/gallery8-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery8-768.jpg    1x,
+                        ./images/gallery/gallery8-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery8.jpg    1x,
+                        ./images/gallery/gallery8-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/gallery/gallery8.jpg"
+                      alt="Organic Food"
+                    />
+                  </picture>
                   <p class="gallery-top-text">
                     14 Stylish and User-Friendly App Design Concepts ·
                     Task Manager App · Calorie Tracker App · Exotic
@@ -417,21 +587,42 @@
                 </div>
                 <div class="gallery-content">
                   <h2 class="gallery-caption section-caption">
-                    Organic Food
+                    Fresh Coffee
                   </h2>
                   <p class="section-text">Web Site</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-item grid-item">
+            <li class="gallery-item">
               <a class="link" href="#">
                 <div class="gallery-top-wrap">
-                  <img
-                    src="./images/gallery9.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./images/gallery/gallery9-1200.jpg    1x,
+                        ./images/gallery/gallery9-1200-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery9-768.jpg    1x,
+                        ./images/gallery/gallery9-768-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/gallery9.jpg    1x,
+                        ./images/gallery/gallery9-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/gallery/gallery9.jpg"
+                      alt="Fresh Coffee"
+                    />
+                  </picture>
                   <p class="gallery-top-text">
                     14 Stylish and User-Friendly App Design Concepts ·
                     Task Manager App · Calorie Tracker App · Exotic

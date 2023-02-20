@@ -96,6 +96,10 @@
     display: none;
   }
 
+  .mob-menu {
+    display: none;
+  }
+
   .hero {
     padding-bottom: 108px;
     background-image: var(--gradient),
@@ -138,6 +142,35 @@
     --gap: 16px;
   }
 
+  .portfolio {
+    padding-top: 134px;
+  }
+
+  .filter-list {
+    margin-bottom: 64px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: none;
+  }
+
+  .filter-btn {
+    padding: 12px 24px;
+  }
+
+  .gallery-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .gallery-item {
+    --cards: 2;
+  }
+
+  .gallery-img {
+    width: 356px;
+    height: 300px;
+  }
+
   .footer-wrapper {
     justify-content: left;
     gap: 72px;
@@ -167,13 +200,5 @@
     width: 408px;
     height: 584px;
     padding: 72px 24px 24px;
-  }
-
-  .burger-open {
-    display: none;
-  }
-
-  .mob-menu {
-    display: none;
   }
 }

@@ -4,24 +4,35 @@ html {
 
 :root {
   --primary-text-color: #434455; /*  SLATE            Text          - Body text                             */
+
   --primary-brand-clr: #4d5ae5; /*   IRIS             Primary Brand - CTAs, Focused, Active states, Links   */
+
   --primary-bg-clr: #ffffff; /*      WHITE            Primary background                                    */
+
   --pressed-state-clr: #404bbf; /*   OCEAN            Pressed state - CTAs                                  */
+
   --dark-clr: #2e2f42; /*            NAVY BLUE        Dark          - Overlays, Shadows,  Headings          */
+
   --success-clr: #31d0aa; /*         GREEN            Success       - Valid fields, Success messages        */
+
   --subtle-text-clr: #8e8f99; /*     LIGHT SLATE      Subtle Text   - Helper text, Deemphasized text        */
+
   --accent-clr: #e7e9fc; /*          CORNFLOWER       Accent        - Accent color, Hairlines, Subtle backgrounds*/
+
   --light-clr: #f4f4fd; /*           CLOUD            Light         - Light mode Backgrounds, Dialogs/alerts     */
+
   --overley-clr: rgba(
     46,
     47,
     66,
     0.4
   ); /*                                NAVY BLUE MODAL  Modal overlay   - Overlay                                     */
+
   --gradient: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)
   ); /*                                GRAY              Hero background - Hero image background                       */
+
   --tra: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --gap: 24px;
   --cards: 4;
@@ -172,8 +183,13 @@ img {
   stroke: var(--dark-clr);
 }
 
+picture {
+  margin: 0;
+}
+
 .mob-menu {
   position: fixed;
+  z-index: 2;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -182,7 +198,6 @@ img {
   height: 100%;
   padding: 80px 40px 40px;
   background-color: var(--primary-bg-clr);
-  z-index: 2;
 }
 
 /* .mob-menu-close {} */
@@ -526,15 +541,20 @@ img {
 /* ===== PORTFOLIO PAGE ===== */
 
 .portfolio {
-  padding-top: 96px;
+  padding-top: 48px;
 }
 
 .filter-list {
-  margin-bottom: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 270px;
+  margin-bottom: 48px;
+  gap: 24px;
 }
 
 .filter-btn {
-  padding: 12px 24px;
+  padding: 8px 16px;
   transition: background-color var(--tra), color var(--tra),
     border var(--tra), box-shadow var(--tra);
   color: var(--primary-brand-clr);
@@ -553,13 +573,12 @@ img {
 
 .gallery-list {
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  justify-content: flex-start;
+  gap: 48px;
 }
 
 .gallery-item {
-  transition: box-shadow var(--tra);
-  --cards: 3;
+  transition: box-shadow var(--tra); /* --cards: 1; */
 }
 
 .gallery-item:hover {
@@ -575,6 +594,12 @@ img {
 .gallery-top-wrap {
   position: relative;
   overflow: hidden;
+}
+
+.gallery-img {
+  flex-shrink: 1;
+  width: 396px;
+  height: 280px;
 }
 
 .gallery-top-text {
@@ -597,12 +622,15 @@ img {
 }
 
 .gallery-content {
+  max-width: 396px;
   padding: 32px 16px;
   border: 1px solid var(--accent-clr);
   border-top: none;
 }
 
-/* .gallery-caption {} */
+.gallery-caption {
+  font-size: 4.15vw;
+}
 
 /* ----- FOOTER ----- */
 
@@ -951,7 +979,7 @@ img {
 
 /* ===== TO TOP ===== */
 
-.go-top {
+/* .go-top {
   width: 40px;
   height: 40px;
   fill: var(--primary-brand-clr);
@@ -961,4 +989,4 @@ img {
   color: var(--primary-brand-clr);
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-}
+} */
