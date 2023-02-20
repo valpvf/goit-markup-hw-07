@@ -14,6 +14,10 @@
     gap: 40px;
   }
 
+  .address {
+    margin: 0;
+  }
+
   .address-email,
   .address-tel {
     letter-spacing: 0.02em;
@@ -64,11 +68,20 @@
 
   .principles-caption {
     font-size: 20px;
+    font-weight: 500;
     line-height: 1.2;
+  }
+
+  .principles-text {
+    font-weight: 400;
   }
 
   .doing {
     display: block;
+  }
+
+  .doing.section {
+    padding-top: 0;
   }
 
   .team-list {
@@ -78,7 +91,8 @@
   }
 
   .customer.section {
-    padding-top: 130px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .customer-list {
@@ -107,7 +121,7 @@
   }
 
   .portfolio {
-    padding-top: 172px;
+    padding-top: 96px;
   }
 
   .filter-list {
@@ -123,7 +137,6 @@
   }
 
   .modal {
-    top: 80px;
-    height: 586px;
+    height: 584px;
   }
 }

@@ -139,7 +139,7 @@
 
   .customer-list {
     --cards: 3;
-    --gap: 16px;
+    --gap: 24px;
   }
 
   .portfolio {
@@ -198,7 +198,6 @@
 
   .modal {
     width: 408px;
-    height: 584px;
     padding: 72px 24px 24px;
   }
 }
